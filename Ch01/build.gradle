@@ -1,15 +1,13 @@
 plugins {
-    id 'java'
+    id 'application'
+    id 'idea'
 }
 
 
-group 'org.shall'
-version '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
+application {
+    mainClass = 'org.shall.AC2019.Chap01'
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+task prepareKotlinBuildScriptModel {
+
 }
